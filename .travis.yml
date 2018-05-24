@@ -18,16 +18,14 @@ env:
  global:
  - ANDROID_API=27
  - EMULATOR_API=21
- - ANDROID_BUILD_TOOLS=27.0.2
  - ADB_INSTALL_TIMEOUT=5 # minutes
 
 android:
  components:
  - tools
  - platform-tools
- - build-tools-$ANDROID_BUILD_TOOLS
- - android-$ANDROID_API
- - android-$EMULATOR_API_LEVEL
+ - build-tools-26.0.2
+ - android-27
  - extra-google-m2repository
  - extra-android-m2repository # for design library
  - addon-google_apis-google-19 # google play services
